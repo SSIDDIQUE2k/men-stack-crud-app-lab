@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asi Index</title>
+</head>
+<body>
+    <h1> All asi</h1>
+    <a href="/asi/new"> create a request</a>
+    <%asi.forEach(Asi => { %>
+     <ul> <a href="/asi/<%= Asi._id %>"><%= Asi.name %></a>
+    <% }) %>
+    
+</body>
+</html>

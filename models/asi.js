@@ -1,8 +1,11 @@
-const mongoose = require('mongoose');
-const asiSchema = mongoose.Schema({
-        name: String,
-        isCompleteted: Boolean,
-    }); 
-const Asi= mongoose.model('Asi', asiSchema);
+const { name } = require('ejs');
+const  mongoose = require('mongoose');
 
-module.exports = Asi;
+const asichema = new mongoose.Schema({
+    name: String,
+    isReadyToEat: Boolean,
+});
+
+const ASI = mongoose.model('ASI', asichema);
+
+module.exports = ASI;
