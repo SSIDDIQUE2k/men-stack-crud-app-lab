@@ -14,6 +14,8 @@ mongoose.connection.on('connected', () => {
     console.log('Mongoose is connected'); // Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment.
     }  );
 
+    const Asi = require('./models/asi.js');
+
 // GET /
 
 app.get('/', async (req, res) => {
